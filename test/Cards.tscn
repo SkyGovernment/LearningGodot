@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://img/TIKAMON.png" type="Texture" id=1]
+[ext_resource path="res://img/OTIBEMON.png" type="Texture" id=2]
+
+[node name="Cards" type="Node2D"]
+
+[node name="OTIBEMON" type="Sprite" parent="."]
+position = Vector2( 113.7, 162.974 )
+texture = ExtResource( 2 )
+
+[node name="TIKAMON" type="Sprite" parent="OTIBEMON"]
+position = Vector2( 254.137, 3.11536 )
+scale = Vector2( 0.156943, 0.165905 )
+texture = ExtResource( 1 )
