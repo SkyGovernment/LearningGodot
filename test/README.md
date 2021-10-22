@@ -2,7 +2,8 @@
 
 ## Click and Drag Codes
 ### 22 October 2021
-'''godot
+```GDScript
+
 extends Sprite
 
 var selected = false
@@ -17,4 +18,4 @@ func _physics_process(delta):
 	if selected:
 		global_position = lerp(global_position, get_global_mouse_position(), 25*delta)
 		
-'''
+```
