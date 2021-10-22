@@ -1,15 +1,21 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://img/MrRobot58.jpg" type="Texture" id=1]
+[ext_resource path="res://dragndrop.gd" type="Script" id=2]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1000, 1000 )
 
 [node name="MrRobot58" type="Sprite"]
-position = Vector2( 70.1972, 65.3028 )
-scale = Vector2( 0.0541592, 0.0541592 )
+position = Vector2( 51.7916, 47.8411 )
+scale = Vector2( 0.0349867, 0.0359699 )
 texture = ExtResource( 1 )
+script = ExtResource( 2 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+show_behind_parent = true
 shape = SubResource( 1 )
+
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
