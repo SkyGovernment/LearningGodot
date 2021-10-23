@@ -1,6 +1,15 @@
 # Dev Log
 
 ## Click and Drag Codes
+### 23 October 2021
+The previous code will anchor the mouse, but never releas it. Codes below are triggered when mouse released
+```GDScript
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == BUTTON_LEFT and not event.pressed:
+			selected = false
+```
+
 ### 22 October 2021
 ```GDScript
 
