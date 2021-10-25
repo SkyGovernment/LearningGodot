@@ -1,12 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Cards.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Icon.tscn" type="PackedScene" id=2]
+[ext_resource path="res://DropZone.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Cards" parent="." instance=ExtResource( 1 )]
-position = Vector2( 221.765, 105.763 )
+position = Vector2( 232.877, 105.763 )
+
+[node name="DropZone" parent="." instance=ExtResource( 3 )]
+position = Vector2( 820.611, 133.489 )
+
+[node name="DropZone2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 130.092, 243.02 )
 
 [node name="MrRobot58" parent="." instance=ExtResource( 2 )]
 position = Vector2( 52.9731, 53.0921 )
